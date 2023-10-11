@@ -31,4 +31,5 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: site
-          GITHUB_TOKEN: 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
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
