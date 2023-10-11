@@ -1,4 +1,6 @@
 site_name: 开源操作系统社区
+repo_url: https://github.com/DongJianHao123/mkdocs-test.git
+repo_name: Dongjianhao123/mkdocs-test
 
 theme:
   name: material
@@ -52,6 +54,3 @@ plugins:
   - git-authors:
       show_contribution: true
       show_line_count: true
-
-repo_url: https://github.com/DongJianHao123/mkdocs-test.git
-repo_name: Dongjianhao123/mkdocs-test
