@@ -4,7 +4,7 @@ on:
     branches: 
       - main
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,10 +15,11 @@ jobs:
           python-version: 3.x
       - run: pip install -r requirements.txt
       - run: mkdocs build
+
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.0.0
         with:
           target_branch: gh-pages
           build_dir: site
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
