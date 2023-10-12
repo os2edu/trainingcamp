@@ -1,6 +1,6 @@
 site_name: 开源操作系统社区
 repo_url: https://github.com/DongJianHao123/mkdocs-test.git
-repo_name: Dongjianhao123/mkdocs-test
+# repo_name: Dongjianhao123/mkdocs-test
 
 theme:
   name: material
@@ -40,11 +40,6 @@ theme:
 extra:
   homepage: https://os2edu.cn
 
-nav:
-  - 主页: index.md
-  - Page 1: page1/index.md
-  - Page n: section/page-n.md
-
 plugins:
   - search
   - glightbox
@@ -54,3 +49,10 @@ plugins:
   - git-authors:
       show_contribution: true
       show_line_count: true
+
+nav:
+  - 主页: index.md
+  - 目录一:
+    - 页面1: test1/page1.md
+  - 目录二:
+    - 页面2: test2/page2.md
