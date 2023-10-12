@@ -1,5 +1,5 @@
-site_name: 开源操作系统社区
-repo_url: https://github.com/DongJianHao123/mkdocs-test.git
+site_name: 开源操作系统训练营课程
+repo_url: https://github.com/os2edu/trainingcamp.git
 # repo_name: Dongjianhao123/mkdocs-test
 
 theme:
@@ -13,7 +13,7 @@ theme:
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.tracking
-    - navigation.expand
+    # - navigation.expand
     - navigation.path
     - navigation.indexes
     - toc.follow
@@ -52,7 +52,22 @@ plugins:
 
 nav:
   - 主页: index.md
-  - 目录一:
-    - 页面1: test1/page1.md
-  - 目录二:
-    - 页面2: test2/page2.md
+  - 第一阶段(Rust编程):
+      - Rustling练习入门，基本数据类型，slice类型，所有权: Rust/page1.md
+      - crate，option，trait和泛型及生命周期: Rust/page2.md
+      - 智能指针，迭代器和闭包，并发编程: Rust/page3.md
+      - Rustlings答疑讲解: Rust/page4.md
+  - 第二阶段(RISC-V & OS Kernel):
+      - 从一个bare metal app开始: rCore/page1.md
+      - rCore Tutorial内存管理和页表: rCore/page2.md
+      - rCore Tutorial进程管理: rCore/page3.md
+      - rCore Tutorial文件系统easy-fs: rCore/page4.md
+      - rCore Tutorial作业讲解和答疑: rCore/page5.md
+      - ArceOS基础: rCore/page6.md
+  - 第三阶段(ArceOS & Hypervisor):
+      - ArceOS单内核Unikernel: ArceOS/page1.md
+      - ArceOS宏内核: ArceOS/page2.md
+      - Rust for Linux驱动: ArceOS/page3.md
+      - Hypervisor虚拟化: ArceOS/page4.md
+      - ChenLongOS辰龙操作系统发行版: ArceOS/page5.md
+      - 基于协程异步机制的操作系统/驱动: ArceOS/page6.md
