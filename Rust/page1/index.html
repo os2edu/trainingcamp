@@ -9,8 +9,10 @@
       
       
       
+        <link rel="prev" href="../..">
       
-        <link rel="next" href="Rust/page1/">
+      
+        <link rel="next" href="../page3/">
       
       
       <link rel="icon" href="https://os2edu.cn/assets/images/logo.png">
@@ -18,14 +20,14 @@
     
     
       
-        <title>开源操作系统训练营课程</title>
+        <title>Rustling练习入门，基本数据类型，slice类型，所有权 - 开源操作系统训练营课程</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6a10b989.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6a10b989.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -44,14 +46,14 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
         html.glightbox-open { overflow: initial; height: 100%; }
         .gslide-title { margin-top: 0px; user-select: text; }
         .gslide-desc { color: #666; user-select: text; }
@@ -62,7 +64,7 @@
             body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
             body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
             body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -84,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#page1" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              主页
+              Rustling练习入门，基本数据类型，slice类型，所有权
             
           </span>
         </div>
@@ -262,29 +264,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    主页
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -293,40 +275,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -335,6 +283,8 @@
       
   
   
+    
+  
   
     
     
@@ -351,12 +301,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -370,7 +320,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             第一阶段(Rust编程)
@@ -381,9 +331,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="Rust/page1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Rustling练习入门，基本数据类型，slice类型，所有权
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -392,6 +360,31 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#page1" class="md-nav__link">
+    page1
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -403,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Rust/page2.md" class="md-nav__link">
+      <a href="../page2.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -423,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Rust/page3/" class="md-nav__link">
+      <a href="../page3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -443,7 +436,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Rust/page4.md" class="md-nav__link">
+      <a href="../page4.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -520,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="rCore/page1/" class="md-nav__link">
+      <a href="../../rCore/page1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -540,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="rCore/page2/" class="md-nav__link">
+      <a href="../../rCore/page2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -560,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="rCore/page3.md" class="md-nav__link">
+      <a href="../../rCore/page3.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -580,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="rCore/page4.md" class="md-nav__link">
+      <a href="../../rCore/page4.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="rCore/page5.md" class="md-nav__link">
+      <a href="../../rCore/page5.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -620,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="rCore/page6.md" class="md-nav__link">
+      <a href="../../rCore/page6.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -697,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ArceOS/page1.md" class="md-nav__link">
+      <a href="../../ArceOS/page1.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ArceOS/page2.md" class="md-nav__link">
+      <a href="../../ArceOS/page2.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -737,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ArceOS/page3.md" class="md-nav__link">
+      <a href="../../ArceOS/page3.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -757,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ArceOS/page4.md" class="md-nav__link">
+      <a href="../../ArceOS/page4.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -777,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ArceOS/page5.md" class="md-nav__link">
+      <a href="../../ArceOS/page5.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -797,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ArceOS/page6.md" class="md-nav__link">
+      <a href="../../ArceOS/page6.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -835,8 +828,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -845,15 +836,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#page1" class="md-nav__link">
+    page1
   </a>
   
 </li>
@@ -876,21 +860,10 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+  <h1>Rustling练习入门，基本数据类型，slice类型，所有权</h1>
+
+<h3 id="page1">page1</h3>
+<!-- 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 -->
 
   <hr>
 <div class="md-source-file">
@@ -948,10 +921,10 @@ docs/
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.path", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "header.autohide"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
